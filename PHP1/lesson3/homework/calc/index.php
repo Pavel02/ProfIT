@@ -40,7 +40,7 @@ $res = calculate($x, $y, $op);
             введенные числа останутся в input-ах, а результат появится после кнопки "равно" <br>
     </div>
 
-    <form action="/calc/index.php" method="post">
+    <form action="/lesson3/homework/calc/index.php" method="post">
         <input type="number" name="x" value="<?php echo $x ?>">
         <select name="op">
             <option value="+" <?php if ('+'==$op) { ?> selected <?php } ?>>+</option>

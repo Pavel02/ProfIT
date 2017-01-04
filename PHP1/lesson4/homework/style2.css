@@ -1,0 +1,18 @@
+
+
+h2 {
+    width:500px;
+    background: deepskyblue;
+}
+
+.post {
+    width: 500px;
+    min-height: 40px;
+    margin-bottom: 10px;
+    background: lightgrey;
+}
+
+.newpost {
+    width: 500px;
+    background: red;
+}

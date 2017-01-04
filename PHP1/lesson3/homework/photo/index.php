@@ -30,7 +30,7 @@ $images = include __DIR__ . '/data.php';
 
     <?php foreach ($images as $num => $image) { ?>
     <div class="photo">
-        <a href="/photo/image.php?file=<?php echo $num; ?>">
+        <a href="/lesson3/homework/photo/image.php?file=<?php echo $num; ?>">
         <img src="/photo/images/<?php echo $image ?>">
         </a>
     </div>
