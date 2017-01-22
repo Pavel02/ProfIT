@@ -7,9 +7,16 @@ $db = new \App\Db();
 // var_dump($res);                                             // Вначале выведет bool(true)
                                                             // Если обновить страницу, то уже bool(false)
 
-$data = $db->query('SELECT * FROM foo');
+// $data = $db->query('SELECT * FROM foo');                 // Для отладки метода с возвратом данных
+// var_dump($data);
 
-var_dump($data);
+
+$data = $db->query(
+    'SELECT * FROM users',
+    'App\Models\User'
+);
+var_dump($data);                                        // На выходе будет массив элементы которого это объекты заданного класса
+
 
 
 
