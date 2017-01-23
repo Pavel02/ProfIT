@@ -45,6 +45,10 @@ class User extends Model
     }
 */
 
+    public function getName()
+    {
+            // здесь выполнение некого кода
+    }
 
 }
 
