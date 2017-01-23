@@ -2,7 +2,7 @@
 
 require __DIR__ . '/autoload.php';
 
-$db = new \App\Db();
+// $db = new \App\Db();
 // $res = $db->execute('CREATE TABLE foo (id SERIAL)');      // Для промежуточной отладки
 // var_dump($res);                                             // Вначале выведет bool(true)
                                                             // Если обновить страницу, то уже bool(false)
@@ -12,11 +12,13 @@ $db = new \App\Db();
 
 
 /*$data = $db->query(
-    'SELECT * FROM users',
+    'SELECT * FROM users', 
     'App\Models\User'
 );
 var_dump($data);     */                                   // На выходе будет массив элементы которого это объекты заданного класса
 
+
+// echo \App\Models\User::$table;                  // Вызов стат метода класса User
 
 $users = \App\Models\User::findAll();           // Мы не создаем никаких объектов. Мы сразу вызывае метод класса.
                                                 // Можно представить, что стат метод, это фукция, лежащая внутри класса
