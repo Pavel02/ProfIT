@@ -1,0 +1,10 @@
+# folder logs 
+logs/
+
+# txt-files 
+docs/*.txt
+
+# phpStorm files
+.idea/
+
+# .gitignore
